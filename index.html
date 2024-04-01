@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Brandon
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Brandon</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about " onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t39.30808-6/240598432_1495214424171329_8410052424328303364_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEB6w0LhO1Gm8FzHtftKnG7UvIa8TP9OUNS8hrxM_05QyvUkDGa93VAaqU9TKgF2Q6dG_PIUdTeRwGImqTssZ1D&_nc_ohc=haVIWSN56QwAX8VUNse&_nc_ht=scontent.fcgy1-1.fna&oh=00_AfDa-I7BVGM5bVh8Rjo-vKsKqZuV1ceemWmiNNtayvBEDg&oe=66026736" alt="Brandon profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">BRANDON</h1>
+        <p class="section__text__p2">A Student Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="/assets/face.webp"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/BRNDN3502/'"
+            alt=""
+          />
+          <img
+            src="/assets/github.png"
+            class="icon"
+            onclick="location.href='https://github.com/brandon0341'"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            class="about-pic"
+            src="https://scontent.fcgy1-1.fna.fbcdn.net/v/t39.30808-6/240598432_1495214424171329_8410052424328303364_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEB6w0LhO1Gm8FzHtftKnG7UvIa8TP9OUNS8hrxM_05QyvUkDGa93VAaqU9TKgF2Q6dG_PIUdTeRwGImqTssZ1D&_nc_ohc=haVIWSN56QwAX8VUNse&_nc_ht=scontent.fcgy1-1.fna&oh=00_AfDa-I7BVGM5bVh8Rjo-vKsKqZuV1ceemWmiNNtayvBEDg&oe=66026736"
+            alt="Profile Picture"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                class="icon"
+                src="/assets/experience.png"
+                alt="Experience icon"
+              />
+              <h3>Experience</h3>
+              <p>2 years<br />Student Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                class="icon"
+                src="/assets/education.png"
+                alt="Experience icon"
+              />
+              <h3>Education</h3>
+              <p>B.S Information Technology<br />Still Studying</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello there! My name is Brandon Bactong, and I'm currently a second-year student pursuing a Bachelor of Science in Information Technology (BS IT). As a passionate learner in the field of technology, I've embarked on this journey to deepen my understanding of the digital landscape and its myriad applications. With a keen interest in areas such as programming, network administration, and cybersecurity, I'm dedicated to honing my skills and knowledge to thrive in this ever-evolving industry. As I continue my academic journey, I aspire to make meaningful contributions to the field of IT and emerge as a proficient professional ready to tackle the challenges of tomorrow's digital world.
+            </p><br><br>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/assets/arrow.png"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        alt=""
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  class="icon"
+                  src="/assets/checkmark.png"
+                  alt="Experience icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/assets/arrow.png"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+        alt=""
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                class="project-img"
+                src="/assets/act1.png"
+                alt="project-1"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/brandon0341/act1.git';"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='act1.html';"
+              >
+                View
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                class="project-img"
+                src="/assets/act2.png"
+                alt="project-1"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/brandon0341/act2';"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='git.html';"
+              >
+                View
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                class="project-img"
+                src="/assets/act3.png"
+                alt="project-1"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/brandon0341/passlink1';"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='/ws/index.html';"
+              >
+                View
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/assets/arrow.png"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        alt=""
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="/assets/email.png"
+            class="icon contact-icon"
+            alt="Email icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@email.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="/assets/face.webp"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/BRNDN3502/'"
+            alt=""
+          />
+          <img
+            src="/assets/inst.webp"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/user775022482838/'"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
